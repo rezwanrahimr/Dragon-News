@@ -7,7 +7,13 @@ import { FaUserCircle } from "react-icons/fa";
 const Header = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="light"
+        variant="light"
+        className="bg-white"
+      >
         <Container>
           {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
