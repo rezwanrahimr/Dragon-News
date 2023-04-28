@@ -1,4 +1,5 @@
 .all-news-container {
   display: grid;
   grid-template-columns: 16.5em 34.5em 17.5em;
+  grid-gap: 24px;
 }

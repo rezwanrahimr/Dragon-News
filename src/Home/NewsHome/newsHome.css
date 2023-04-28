@@ -1,0 +1,17 @@
+.card-container {
+  height: auto;
+  width: 558px;
+  border: 2px solid #e7e7e7;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.userProfile {
+  height: 80px;
+  width: 554px;
+  background-color: #f3f3f3;
+}
+.userProfile img {
+  height: 40px;
+  max-width: 40px;
+  border-radius: 50%;
+}

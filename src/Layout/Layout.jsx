@@ -3,6 +3,7 @@ import Header from "../Header/Header/Header";
 import TopHeader from "../Header/TopHeader/TopHeader";
 import "./layout.css";
 import AllCaterogy from "../Caterogy/AllCaterogy";
+import NewsHome from "../Home/NewsHome/NewsHome";
 
 const Layout = () => {
   return (
@@ -14,7 +15,7 @@ const Layout = () => {
           <AllCaterogy></AllCaterogy>
         </div>
         <div>
-          <h1>Dragon News Home</h1>
+          <NewsHome></NewsHome>
           <Outlet></Outlet>
         </div>
         <div>

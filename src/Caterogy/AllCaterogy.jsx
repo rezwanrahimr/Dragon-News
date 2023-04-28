@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./AllCaterogy.css";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import CategoryItems from "./CategoryItems/CategoryItems";
 
 const AllCaterogy = () => {
   const [category, setCategory] = useState([]);
@@ -17,10 +18,20 @@ const AllCaterogy = () => {
       <div>
         {category.map((element) => (
           <>
-            <Link key={element.id} to="">
+            <Link
+              key={element.id}
+              to={`/news/${element.id}`}
+              className="category-btn"
+            >
               <Button
-                className="m-1"
-                style={{ width: "-webkit-fill-available" }}
+                variant="light"
+                className="m-1 "
+                style={{
+                  width: "-webkit-fill-available",
+                  fontWeight: "500",
+                  fontSize: "20px",
+                  color: "#9F9F9F",
+                }}
               >
                 {" "}
                 {element.name}
@@ -30,6 +41,8 @@ const AllCaterogy = () => {
           </>
         ))}
       </div>
+
+      <CategoryItems></CategoryItems>
     </div>
   );
 };
