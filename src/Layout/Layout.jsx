@@ -4,6 +4,7 @@ import TopHeader from "../Header/TopHeader/TopHeader";
 import "./layout.css";
 import AllCaterogy from "../Caterogy/AllCaterogy";
 import NewsHome from "../Home/NewsHome/NewsHome";
+import RightBar from "../RightBar/RightBar";
 
 const Layout = () => {
   return (
@@ -19,7 +20,7 @@ const Layout = () => {
           <Outlet></Outlet>
         </div>
         <div>
-          <h1>right Side Bar</h1>
+          <RightBar></RightBar>
         </div>
       </section>
     </div>
